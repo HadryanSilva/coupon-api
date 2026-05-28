@@ -5,8 +5,8 @@ import com.fasterxml.jackson.annotation.JsonInclude;
 /**
  * Envelope padrão para todas as respostas de erro da API.
  *
- * @param message mensagem descritiva (opcional em sucesso, obrigatória em erro)
- * @param data    payload da resposta (nulo em caso de erro)
+ * @param message mensagem descritiva do erro
+ * @param data    payload da resposta
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 public record ErrorResponse<T>(
